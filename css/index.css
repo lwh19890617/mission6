@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+html{
+    background-color: black;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    margin: 100px auto;
+    position: relative;
+}
+.img-box{
+    width: 100%;
+    height: 100%;
+}
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mini-box{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 5;
+}
+.mini-img{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.mini-img:hover .mask{
+    opacity: 0;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+@keyframes img1 {
+    from{left: -800px}
+    to{left: 0}
+}
+@keyframes img2 {
+    from{top: 500px}
+    to{top: 0}
+}
+@keyframes img3 {
+    from{transform: scale(0.1)}
+    to{transform: scale(1)}
+}
+@keyframes img4 {
+    from{transform: scale(2)}
+    to{transform: scale(1)}
+}
+@keyframes img5 {
+    from{transform: rotateZ(-360deg) scale(0.1)}
+    to{transform: rotateZ(0deg) scale(1)}
+}
